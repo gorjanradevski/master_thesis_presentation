@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="main">
+    	<form action="" method="post" novalidate>
+		{{ form.query }}
+		{{ form.search() }}
+		</form>
+	</div>
+	{% if form.query.data %}
+	<div>{{form.query.data}}</div>
+	{% endif %}
+{% endblock %}
