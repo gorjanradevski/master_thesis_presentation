@@ -1,6 +1,6 @@
 /.DS_Store
-#/models
-#/data
+/models
+/data
 /.idea
 __pycache__/
-#/hyperparameters
+/hyperparameters
