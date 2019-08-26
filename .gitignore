@@ -1,6 +1,7 @@
 /.DS_Store
-/models
-/data
 /.idea
 __pycache__/
-/hyperparameters
+app/static/Flickr8k_dataset/
+app/static/embedded_images.pkl
+app/static/hyperparameters/
+app/static/models/

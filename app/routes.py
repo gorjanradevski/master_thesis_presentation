@@ -7,7 +7,7 @@ from app.inference import predict
 @app.route("/", methods=["GET", "POST"])
 def index():
     form = SearchForm()
-    image_path = predict(form.query.data)
-    return render_template(
-        "index.html", title="SMHA Demo", images=image_path, form=form
-    )
+    if form.query.data is not None:
+        image_paths = predict(form.query.data)
+        return render_template("index.html", image_path=image_paths, form=form)
+    return render_template("index.html", form=form)

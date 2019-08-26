@@ -7,7 +7,13 @@
 		{{ form.search() }}
 		</form>
 	</div>
-	{% if form.query.data %}
-	<div>{{images.image_path}}</div>
+	{% if image_path %}
+	<div class="retrieved-images">
+		<div class="retrieved-image"><img src={{image_path[0]}}></div>
+		<div class="retrieved-image"><img src={{image_path[1]}}></div>
+		<div class="retrieved-image"><img src={{image_path[2]}}></div>
+		<div class="retrieved-image"><img src={{image_path[3]}}></div>
+		<div class="retrieved-image"><img src={{image_path[4]}}></div>
+	</div>
 	{% endif %}
 {% endblock %}

@@ -44,5 +44,29 @@ input:focus{
 }
 
 .main {
-	margin: 0 auto;
+	margin-left: 350px;
+	width: 1000px;
 }
+
+.retrieved-images {
+	margin: 0 auto;
+	width: 600px;
+}
+
+.retrieved-image {
+	width: 500px;
+	margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
